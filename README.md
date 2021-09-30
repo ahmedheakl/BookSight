@@ -23,7 +23,11 @@ Here are some pictures from the website
 
 <img width='600' heigh='550' src='https://github.com/ahmedheakl/BookSight/blob/main/authors_page.png'>
 <img width='600' heigh='550' src='https://github.com/ahmedheakl/BookSight/blob/main/books_page.png'>
-                                 
+
+# Deployment
+Application is deployed to Heroku using MonogoDB Atlas as its database
+
+**Here is the link:** https://books-website-dev.herokuapp.com/
 
  
 
