@@ -17,6 +17,18 @@ A website to register authors and the books they have written using MongoDB, Nod
 # To run the code
 * Write ```npm install``` in your terminal to install all required packages. 
 * Run ```npm run devStart``` for the server to start listening 
+
+# Highlights 
+Here are some pictures from the website
+
+<img width='600' heigh='550' src='https://github.com/ahmedheakl/BookSight/blob/main/authors_page.png'>
+<img width='600' heigh='550' src='https://github.com/ahmedheakl/BookSight/blob/main/books_page.png'>
+
+# Deployment
+Application is deployed to Heroku using MonogoDB Atlas as its database
+
+**Here is the link:** https://books-website-dev.herokuapp.com/
+
  
 
 
