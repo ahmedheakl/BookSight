@@ -13,6 +13,7 @@ A website to register authors and the books they have written using MongoDB, Nod
 * ejs: To write javascript code inside of HTML
 * Method-Override: To use the PUT and DELETE methods
 * dotevn: To set the database environment variables
+* Body-parser: To get data from forms through the body
 
 # To run the code
 * Write ```npm install``` in your terminal to install all required packages. 
