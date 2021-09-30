@@ -7,4 +7,9 @@
 <br>
 <% authors.forEach(auth => { %>
     <div><%= auth.name %></div>
+    <a href='/authors/<%= auth.id %>'>View</a>
+    <a href='/authors/<%= auth.id %>/edit'>Edit</a>
+    <form action="/authors/<%=auth.id%>?_method=DELETE" method="POST">
+        <button type="submit">Delete</button>
+    </form>
 <% }) %>

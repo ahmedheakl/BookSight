@@ -1,0 +1,13 @@
+<% if(locals.message != null ){ %>
+    <h3><%= message %></h3>
+<% } %>
+
+
+<h2>Edit Book</h2>
+<form action="/books/<%= book.id %>?_method=PUT" method="POST">
+  <%- include('_form_fields') %>
+  <a href="/books/<%= book.id %>">Cancel</a>
+  <button type="submit">Edit</button>
+</form>
+
+
