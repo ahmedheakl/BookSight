@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 const expressLayouts = require("express-ejs-layouts");
 const methodOverride = require("method-override");
-
+const bodyParser = require("body-parser");
 const indexRouter = require("./routes/index");
 const authorsRouter = require("./routes/authors");
 const booksRouter = require("./routes/books");
@@ -25,6 +25,7 @@ app.set("layout", "layouts/layout");
 app.use(expressLayouts);
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
+app.use(bodyParser.urlencoded({ limit: "10mb", extended: false }));
 
 // Routes
 app.use("/", indexRouter);
