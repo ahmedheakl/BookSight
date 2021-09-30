@@ -17,6 +17,12 @@ A website to register authors and the books they have written using MongoDB, Nod
 # To run the code
 * Write ```npm install``` in your terminal to install all required packages. 
 * Run ```npm run devStart``` for the server to start listening 
+
+# Highlights 
+Here are some pictures from the website
+
+<img width='200' heigh='150' src='https://github.com/ahmedheakl/BookSight/blob/main/authors_page.png'>
+
  
 
 
