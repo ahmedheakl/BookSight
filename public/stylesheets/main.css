@@ -1,0 +1,46 @@
+@import "shared/fonts.css";
+@import "shared/variables.css";
+@import "shared/header.css";
+@import "shared/buttons.css";
+@import "shared/form.css";
+@import "shared/authors.css";
+@import "shared/books.css";
+
+:root {
+  font-family: "Courier New";
+  font-size: 20px;
+  color: var(--color-text-light);
+}
+
+.header {
+  font-family: "Courier New";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    var(--color-background-dark),
+    var(--color-background-light)
+  );
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.inner-container {
+  margin: 0 2rem;
+}
+
+.page_header {
+  font-size: 2rem;
+  font-weight: 500;
+}

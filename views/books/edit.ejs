@@ -6,8 +6,10 @@
 <h2>Edit Book</h2>
 <form action="/books/<%= book.id %>?_method=PUT" method="POST">
   <%- include('_form_fields') %>
-  <a href="/books/<%= book.id %>">Cancel</a>
-  <button type="submit">Edit</button>
+  <div class='form_row form_row_end btn_row'>
+    <a class='btn btn_danger' href="/books/<%= book.id %>">Cancel</a>
+    <button class='btn btn_primary' type="submit">Edit</button>
+  </div>
 </form>
 
 

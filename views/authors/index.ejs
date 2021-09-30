@@ -1,15 +1,24 @@
-<h2>Search Author</h2>
-<label>Name</label>
+<h2 class='page_header'>Search Author</h2>
 <form action="/authors" method="GET">
+    <div class='form_item'>
+    <label>Name</label>
     <input type='text' name='name' value='<%= searchOptions.name %>'>
-    <button type='submit'>Search</button>
+</div>
+    <div class='form_row form_row_end'>
+    <button class='btn btn_primary' type='submit'>Search</button>
+</div>
+
 </form>
 <br>
 <% authors.forEach(auth => { %>
-    <div><%= auth.name %></div>
-    <a href='/authors/<%= auth.id %>'>View</a>
-    <a href='/authors/<%= auth.id %>/edit'>Edit</a>
-    <form action="/authors/<%=auth.id%>?_method=DELETE" method="POST">
-        <button type="submit">Delete</button>
-    </form>
+    <div class='author_row'>
+    <div class='author_name'><%= auth.name %></div>
+    <div class='btn_row'>
+        <a class='btn btn_primary' href='/authors/<%= auth.id %>'>View</a>
+        <a class='btn btn_primary' href='/authors/<%= auth.id %>/edit'>Edit</a>
+        <form action="/authors/<%=auth.id%>?_method=DELETE" method="POST">
+            <button class='btn btn_danger' type="submit">Delete</button>
+        </form>
+    </div>
+</div>
 <% }) %>

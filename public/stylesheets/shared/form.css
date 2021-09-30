@@ -1,0 +1,82 @@
+:root {
+  --form-label-font-size: 1.2rem;
+  --form-input-background-color: hsl(var(--color-base-hue), 100%, 31%);
+  --form-input-border-color: hsl(var(--color-base-hue), 100%, 50%);
+  --form-input-border-color-light: hsl(var(--color-base-hue), 100%, 80%);
+}
+.form_row {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.form_item_no_grow {
+  flex-grow: 0;
+}
+
+.form_item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.form_item:first-child {
+  margin-left: 0;
+}
+
+.form_item > label {
+  font-size: var(--form-label-font-size);
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+  font-weight: bold;
+}
+
+.form_row_end {
+  justify-content: flex-end;
+}
+
+.form_item input,
+.form_item select,
+.form_item textarea {
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--form-input-border-color);
+  background-color: var(--form-input-background-color);
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Courier New";
+  outline: none;
+}
+
+.form_item textarea {
+  height: 100%;
+  resize: none;
+}
+
+.form_item select option {
+  background-color: black;
+}
+
+.form_item input:focus,
+.form_item select:focus,
+.form_item textarea:focus {
+  border-color: var(--form-input-border-color-light);
+}
+
+.filepond--root {
+  font-family: "Courier New";
+  margin-bottom: 0;
+}
+
+.filepond--panel-root {
+  background-color: var(--form-input-background-color);
+  border: 1px solid var(--form-input-border-color);
+}
+
+.filepond--drop-label {
+  color: var(--color-text-light);
+  font-size: inherit;
+}

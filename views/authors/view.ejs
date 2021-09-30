@@ -1,15 +1,11 @@
-<h2><%= author.name %></h2>
-<a href='/authors/<%= author.id%>/edit'>Edit</a>
-<form action="/authors/<%=author.id %>?_method=DELETE" method="POST">
-    <button type="submit">Delete</button>
-</form>
-<div>
-    <% if (books.length > 0){ %>
-        <h2>Books By Author</h2>    
-            <% books.forEach(book => { %>
-                <a href='/books/<%= book.id%>'>
-                    <img height="150" width="100" src="<%= book.coverImagePath %>">
-                </a>
-            <% }) %>
-    <% }%>
-  </div>
+<div class='author_row'>
+    <h2 class="page_header"><%= author.name %></h2>
+    <div class='btn_row'>
+        <a class='btn btn_primary' href='/authors/<%= author.id%>/edit'>Edit</a>
+        <form action="/authors/<%=author.id %>?_method=DELETE" method="POST">
+            <button class='btn btn_danger' type="submit">Delete</button>
+        </form>
+    </div>  
+</div>
+<br>
+<%- include('../partials/bookGrid', {books: books, large: true}) %>
