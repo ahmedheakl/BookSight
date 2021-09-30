@@ -21,8 +21,8 @@ A website to register authors and the books they have written using MongoDB, Nod
 # Highlights 
 Here are some pictures from the website
 <p align='center>
-<img width='600' heigh='550' src='https://github.com/ahmedheakl/BookSight/blob/main/authors_page.png'>
-<img width='600' heigh='550' src='https://github.com/ahmedheakl/BookSight/blob/main/books_page.png'>
+ <img width='600' heigh='550' src='https://github.com/ahmedheakl/BookSight/blob/main/authors_page.png'>
+ <img width='600' heigh='550' src='https://github.com/ahmedheakl/BookSight/blob/main/books_page.png'>
 </p>                                    
 
  
